@@ -32,3 +32,4 @@ INSTALLED_APPS = [
 ```
 
 # 관리자 페이지에 모델 추가(blog/admin.py) 
+
