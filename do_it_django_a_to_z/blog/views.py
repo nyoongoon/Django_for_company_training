@@ -14,6 +14,7 @@ class PostDetail(DetailView):
 
 
 
+
 # def index(request):
 #     posts = Post.objects.all().order_by('-pk')
 #     return render(request, 'blog/post_list.html', {'posts': posts, })
