@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from .models import Post
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 
 
 # class 기반
@@ -12,6 +12,9 @@ class PostList(ListView):
 class PostDetail(DetailView):
     model = Post
 
+class PostCreate(CreateView):
+    model = Post
+    fields = ['title', 'content', 'head_image']
 
 
 

@@ -4,8 +4,7 @@ from . import views # urls.py에 들어갈 함수 및 클래스는 views.py에 �
 # CBV(Class Based View) : 장고에서 제공하는 클래스를 이용한 정의
 
 urlpatterns = [
+    path('create_post/', views.PostCreate.as_view()),
     path('<int:pk>/', views.PostDetail.as_view()),
-    # path('', views.index),
     path('', views.PostList.as_view()),
-    # path('', include('single_pages.urls')),
 ]
